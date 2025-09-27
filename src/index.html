@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <title>Timer de Estudos</title>
+        <link rel="stylesheet" href="./clock.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Nitô-Ichi-ryü</h1>
+  <label for="minutes">Concentração:</label>
+  <input type="number" id="minutes" value="0" min="0">
+  <button onclick="startTimer()">Iniciar</button>
+  <button onclick="resetTimer()">Resetar</button>
+  <h2 id="countdown">00:00</h2>
+
+  <!--Alerta de tempo esgotado -->
+  <audio id="alertSound" src="./audios/som_tigela_tibetana.mp3" preload="auto">
+
+  </audio>
+
+
+    <footer>"Você deve entender que há mais de um caminho para o topo da montanha" 
+      ~ Miyamoto Musashi</footer>
+    <script src="index.js"></script>
+
+</body>
+</html>
